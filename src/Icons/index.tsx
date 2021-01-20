@@ -27,11 +27,11 @@ export const ICON_TYPE: iconType = {
   MATERIAL_COMMUNITY: 'MATERIALCOMMUNITY',
 };
 type IconX = {
-  origin: string;
-  name: string;
-  color: string;
-  size: number;
-  paddingLeft: number;
+  origin?: string;
+  name?: string;
+  color?: string;
+  size?: number;
+  paddingLeft?: number;
   style?: StyleSheet.Styles;
 };
 
