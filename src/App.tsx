@@ -20,7 +20,12 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 //
 import {NetInfoProvider} from './Lib/NetInfo/Context';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
+const myButton = (
+  <Icon.Button name="facebook" backgroundColor="#3b5998" onPress={() => {}}>
+    Login with Facebook
+  </Icon.Button>
+);
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
@@ -46,6 +51,7 @@ const App = () => {
                   this screen and then come back to see your edits.
                 </Text>
               </View>
+              <View>{myButton}</View>
               <View style={styles.sectionContainer}>
                 <Text style={styles.sectionTitle}>See Your Changes</Text>
                 <Text style={styles.sectionDescription}>
