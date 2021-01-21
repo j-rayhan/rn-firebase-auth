@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {Expense} from '../../Types';
+import {Expense} from '../../types';
 
 const Item: React.Fc<Expense> = ({
   id,

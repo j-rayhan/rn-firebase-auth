@@ -4,8 +4,8 @@
 
 import React from 'react';
 //
-import {NetInfoProvider} from './Lib/NetInfo/Context';
-import Expenses from './Screens/Expenses';
+import {NetInfoProvider} from './lib/NetInfo/Context';
+import Expenses from './screens/Expenses';
 
 const App: React.FC = () => {
   return (

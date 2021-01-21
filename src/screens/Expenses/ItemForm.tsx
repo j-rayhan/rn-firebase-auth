@@ -7,7 +7,7 @@ import {
   TextInput,
   StyleSheet,
 } from 'react-native';
-import {Expense} from '../../Types';
+import {Expense} from '../../types';
 
 interface Button {
   label: string;

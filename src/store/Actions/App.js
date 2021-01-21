@@ -1,5 +1,5 @@
 import {action, thunk} from 'easy-peasy';
-import {STATUS, APP_STATE} from '../../Constants';
+import {STATUS, APP_STATE} from '../../constants';
 import BaseModel from './Base';
 
 const checkAppVersion = thunk(async (actions, payload, {injections}) => {

@@ -8,7 +8,7 @@ import {StyleSheet, View, Text, FlatList} from 'react-native';
 import SearchItems from './SearchItems';
 import ExpenseForm, {Button} from './ItemForm';
 import Item from './Item';
-import Expense, {expenses} from '../../Types/Expense';
+import Expense, {expenses} from '../../types/Expense';
 
 const App: React.FC = () => {
   // const [newExpense, setNewExpense] = React.useState<Expense | null>(null);
