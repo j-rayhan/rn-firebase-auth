@@ -1,7 +1,7 @@
 import ThemeContext from './ThemeContext';
 import {useContext} from 'react';
 
-const useAppTheme = props => {
+const useAppTheme = (props) => {
   return useContext(ThemeContext);
 };
 

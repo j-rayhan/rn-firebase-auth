@@ -16,4 +16,3 @@ export const STATUS = {
   FETCHING: 'FETCHING',
   FAILED: 'FAILED',
 };
-

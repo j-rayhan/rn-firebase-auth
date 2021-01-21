@@ -20,7 +20,9 @@ import useTranslation from '../../i18n';
 import Fonts from '../../Themes/Fonts';
 
 export default () => {
-  const onChange = useStoreActions(actions => actions.login.onLoginInputChange);
+  const onChange = useStoreActions(
+    (actions) => actions.login.onLoginInputChange,
+  );
   const {t} = useTranslation();
   const {login} = useAuth();
   const {theme} = useAppTheme();
@@ -34,7 +36,7 @@ export default () => {
     inputPassword.current.focus();
   };
 
-  const {username, password, status} = useStoreState(state => ({
+  const {username, password, status} = useStoreState((state) => ({
     username: state.login.username,
     password: state.login.password,
     status: state.login.status,
@@ -91,7 +93,7 @@ export default () => {
             autoCapitalize="none"
             returnKeyType={'next'}
             onSubmitEditing={onSubmit}
-            onChangeText={text =>
+            onChangeText={(text) =>
               onChange({
                 key: 'username',
                 value: text,
@@ -107,7 +109,7 @@ export default () => {
             label="PASSWORD"
             returnKeyType={'go'}
             onSubmitEditing={loginUser}
-            onChangeText={text =>
+            onChangeText={(text) =>
               onChange({
                 key: 'password',
                 value: text,

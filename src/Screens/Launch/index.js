@@ -5,7 +5,7 @@ import colors from '../../Themes/Colors';
 import {Container} from '../../Components';
 import useAppTheme from '../../Themes/Context';
 
-export default function() {
+export default function () {
   const {theme} = useAppTheme();
 
   return (
