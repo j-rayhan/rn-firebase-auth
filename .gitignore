@@ -1,3 +1,7 @@
+# CONFIG
+#
+src/config/firebase*
+
 # OSX
 #
 .DS_Store
